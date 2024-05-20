@@ -19,11 +19,6 @@
   src: url('TiemposHeadline-LightItalic.woff2') format('woff2');
 }
 
-.container1 {
-  margin: 0 auto;
-  max-width: 1200px;
-}
-
 .column-full a,
 .hero p,
 .hero a,
@@ -44,29 +39,26 @@
 
 .column-full img {
   margin-top: 20px;
-  width: 200px;
+  width: 300px;
 }
 
-.column-full a {
 
+.contactUs {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  min-height: 60px;
   text-decoration: none;
-  padding: 30px;
-  color: gray;
-}
-
-.column-full a:nth-of-type(5) {
-  text-decoration: none;
-  margin-bottom: 20px;
-  padding: 15px 20px;
+  padding: 16px 24px;
   color: white;
   border-radius: 5px;
-  background-color: rgb(31, 82, 129);
+  background-color: rgba(117, 189, 233, 255);
 }
 
 .greyLine {
-  margin-top: 40px;
-  margin-bottom: 60px;
-  border-bottom: 1px solid lightgray;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgb(227, 226, 226);
 }
 
 .hero {
@@ -103,7 +95,7 @@
   padding: 15px 40px;
   color: white;
   border-radius: 5px;
-  background-color: rgb(31, 82, 129);
+  background-color: rgba(23, 92, 211, 255);
 }
 
 .container2 {
@@ -137,17 +129,9 @@
 .headerSection p {
   color: rgb(58, 57, 57);
   margin: 0;
-  max-width: 32%;
+  max-width: 50%;
   line-height: 30px;
-  font-size: 15px;
-}
-
-.row {
   font-size: 20px;
-  line-height: 55px;
-  color: rgb(58, 57, 57);
-  margin-top: 50px;
-  display: flex;
 }
 
 ul {
@@ -204,7 +188,7 @@ aside a {
   padding: 15px 40px;
   color: white;
   border-radius: 5px;
-  background-color: rgb(31, 82, 129);
+  background-color: rgba(23, 92, 211, 255);
 }
 
 .blackBackground {
@@ -216,7 +200,7 @@ aside a {
 }
 
 .blackBackground img {
-  width: 150px;
+  width: 300px;
   margin-bottom: 10px;
 }
 
@@ -261,9 +245,11 @@ aside a {
   flex-direction: column;
 }
 
+.desc1 {
+  font-size: 15px;
+}
 
 .footer {
-
   display: flex;
   margin-left: 100px;
   font-size: 15px;
@@ -276,4 +262,293 @@ aside a {
   font-weight: bold;
   text-decoration: none;
   color: grey;
+}
+
+/* navigation */
+ul.navUL {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+
+
+ul.navUL li a {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  /* color: blue; */
+}
+
+/* bubble style */
+.hoverBubble1,
+.hoverBubble2,
+.hoverBubble3 {
+  background: #333333;
+  color: #ffffff;
+  cursor: pointer;
+  opacity: 0;
+  padding: 5px;
+  position: absolute;
+  text-align: left;
+  visibility: hidden;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -ms-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.bubblePosition1 {
+  bottom: -85%;
+  height: inherit;
+  left: -140%;
+  top: auto;
+  width: 300px;
+}
+
+.hoverBubble1:after,
+.bubblePosition1:after {
+  border: 8px solid transparent;
+  border-top-color: #333333;
+  bottom: 80px;
+  content: '';
+  height: 0px;
+  left: 308px;
+  transform: rotate(-0.25turn);
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  width: 0px;
+}
+
+.bubblePosition2 {
+  bottom: -75%;
+  height: inherit;
+  left: 110%;
+  width: 400px;
+}
+
+.hoverBubble2:after,
+.bubblePosition2:after {
+  border: 8px solid transparent;
+  border-top-color: #333333;
+  bottom: 75px;
+  content: '';
+  height: 0px;
+  left: -425px;
+  transform: rotate(90deg);
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  width: 0px;
+}
+
+.bubblePosition3 {
+  bottom: -180%;
+  height: inherit;
+  left: 110%;
+  width: 400px;
+}
+
+.hoverBubble3:after,
+.bubblePosition3:after {
+  border: 8px solid transparent;
+  border-top-color: #333333;
+  bottom: 150px;
+  content: '';
+  height: 0px;
+  left: -425px;
+  transform: rotate(90deg);
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  width: 0px;
+}
+
+/* bubble hover */
+ul.navUL li a:hover .hoverBubble1,
+ul.navUL li a:hover .hoverBubble2,
+ul.navUL li a:hover .hoverBubble3 {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -ms-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+/* content in the bubble */
+
+.hoverBubble1 p,
+.hoverBubble2 p,
+.hoverBubble3 p {
+  font-size: 0.9em;
+  min-height: 100px;
+}
+
+/* Dropdown Button */
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: rgba(117, 189, 233, 255);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  color: white;
+  background-color: rgba(23, 92, 211, 255);
+}
+
+
+/* CSS */
+.dropbtn {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
+}
+
+.dropbtn:disabled {
+  pointer-events: none;
+}
+
+.dropbtn:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.dropbtn:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.monActBtn {
+  margin-top: 10px;
+  background-color: #2f80ed;
+  border-radius: 10px;
+  border-style: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: Inter, -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  letter-spacing: normal;
+  outline: none;
+  padding: 14px 30px;
+  text-align: center;
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+}
+
+.monActBtn:hover {
+  background-color: #1366d6;
+  box-shadow: rgba(0, 0, 0, .05) 0 5px 30px, rgba(0, 0, 0, .05) 0 1px 4px;
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: .35s;
+}
+
+.monActBtn:hover:after {
+  opacity: .5;
+}
+
+.monActBtn:active {
+  box-shadow: rgba(0, 0, 0, .1) 0 3px 6px 0, rgba(0, 0, 0, .1) 0 0 10px 0, rgba(0, 0, 0, .1) 0 1px 4px -1px;
+  transform: translateY(2px);
+  transition-duration: .35s;
+}
+
+.monActBtn:active:after {
+  opacity: 1;
+}
+
+.auPairAreaBtn {
+  background-image: linear-gradient(#0dccea, #0d70ea);
+  border: 0;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, .3) 0 5px 15px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: Montserrat, sans-serif;
+  font-size: .9em;
+  margin: 5px;
+  padding: 10px 15px;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+@media (min-width: 768px) {
+  .button-65 {
+    padding: 14px 22px;
+    width: 176px;
+  }
 }

@@ -7,41 +7,67 @@
   <meta property="og:title" content="fitness-pal" />
   <meta property="og:type" content="AI tool to prevent patient accidents." />
   <meta property="og:url" content="https://youssef-najjarine.github.io/syncopation.ai/" />
-  <meta property="og:image" content="https://youssef-najjarine.github.io/syncopation.ai/imgs/synco-emblem.png" />
+  <link rel="shortcut icon" href="imgs/synco-emblem.png" />
   <meta property="og:description" content="AI accident prevention software." />
   <title>SyncopationAI</title>
+  <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="layout.css">
+  <script defer src="main.js"></script>
 </head>
 
 <body>
 
   <div class="container1">
     <div class="column-full">
-      <img src="images/logo-blue.svg">
       <div>
-        <a href="productTab.html">Product</a>
-        <a href="implementationTab.html">Implementation</a>
-        <a href="aboutUsTab.html">About Us</a>
-        <a href="#">Blog</a>
-        <a href="#">Contact Us</a>
+        <img src="imgs/synco-logo.png" />
+      </div>
+      <div>
+        <div class="dropdown">
+          <button class="dropbtn">Platform</button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+        <div class="dropdown">
+
+          <button class="dropbtn">Resources</button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Company</button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+        <button class="contactUs">Contact Us</button>
       </div>
     </div>
-    <div class="greyLine"></div>
-
+  </div>
+  <div class="greyLine"></div>
+  <div class="container1">
     <div class="hero">
-      <img src="images/hero.jpg">
+      <img src="imgs/hospital-bed.jpg">
       <div>
-        <h1>The EMR Reimagined for
-          Primary Care
+        <h1>Patient Fall Prevention Reimagined
         </h1>
-        <p>Can't remember the last time you talked with a patient without focusing
-          on the EMR?canvas lets you rediscover joy in the work you do. Capture
-          meaningful data, identify gaps in care, and move seamlessly between
-          tasks within the platform. You stay present with patients while your
-          whole team stays up-to-speed. Be a better doctor with Canvas,
-          designed for primary care providers with the help of primary care
-          providers.</p>
+        <p>
+          Patient falls are a significant concern in hospitals and care centers worldwide, especially in elderly and
+          senior care.
+          According to recent statistics, approximately 700,000 to 1 million patient falls occur in U.S. hospitals each
+          year, resulting in up to 250,000 injuries and 11,000 deaths. With the aging population expected to double by
+          2060, the need for improved fall solutions becomes even more crucial. Recent methods of monitoring are often
+          invasive and costly, and do not provide real-time assistance.
+        </p>
         <a href="#">Get Started</a>
       </div>
     </div>
@@ -50,22 +76,107 @@
   <div class="container2">
     <div class="greyBackground">
       <div class="headerSection">
-        <h2>Clinicians Prefer Canvas</h2>
-        <p>Pysician-owned primary care practice across the country have
-          already made Canvas the fabric of their care.</p>
+        <h2>Monitored Activities</h2>
+        <p>
+          By utilizing cameras and advanced computer vision techniques we provide patient's real-time monitoring,
+          prompt alerts, and enhanced safety measures for healthcare facilities. According to Syneos Health
+          Communications, 64 percent of patients reported they would be comfortable with
+          AI virtual monitoring.
+        </p>
       </div>
-      <div class="row">
-        <ul class="ul1">
-          <li>Cascade Family Practice, Portland OR</li>
-          <li>Temescal Creek Medicine, Oakland CA</li>
-          <li>San Juan Healthcare, FridayHarbor WA</li>
-        </ul>
+      <div>
+        <div class="navWrapOuter">
+          <div class="navWrapInner row">
+            <ul class="navUL">
+              <li>
+                <a href="#" class="monActBtn">
+                  RESTLESS IN BED
+                  <div class="bubblePosition1 hoverBubble1">
+                    <p>
+                      Alerts staff when a patient is moving in bed, might be waking up, or might need help.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="monActBtn">
+                  BED EXIT
+                  <div class="bubblePosition1 hoverBubble1">
+                    <p>
+                      Alerts staff when frail a monitored patient or resident is about to get
+                      up or needs help. Customized alerts prevent falls effectively.
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
 
-        <ul class="ul2">
-          <li>Ward Medical Clinic, Bonifay FL</li>
-          <li>Caribou Medical, Towanda PA</li>
-          <li>Bay Tree Family Care, Red Bay AL</li>
-        </ul>
+            <ul class="navUL">
+              <li>
+                <a href="#" class="monActBtn">
+                  ROOM & TOILET EXIT
+                  <div class="bubblePosition2 hoverBubble2">
+                    <p>
+                      Alerts staff when a patient falls or needs help on toilet. Room exit
+                      alerts for wandering patients or residents.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="monActBtn">
+                  PATIENT FALL
+                  <div class="bubblePosition3 hoverBubble3">
+                    <p>
+                      Alerts staff if a patient has fallen and needs immediate assistance.
+                      Low-cost, low-maintenance off-the-shelf cameras. Choose a 360 fisheye camera for precise analyze
+                      with no
+                      blind spots.
+
+                      AI automatically analizyses visible human actions - pattern recognition and secured lines support
+                      patient
+                      privacy.
+                      HIPPA compliant data processing.
+                      No data is saved or seen, only real-time generated alerts of risky situations.
+                      Unobtrusive, contactless, no wearables needed.
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container2">
+    <div class="greyBackground">
+      <div class="headerSection">
+        <h2>AuPair Speciality Areas</h2>
+        <p>
+          In elderly care, residents are often frail and might suffer from dementia and memory illnesses. Patients like
+          this are at great risk of falling or wandering off and getting lost. Residents still deserve to maintain their
+          dignity and independence. With AuPair, nurses and caretakers can care for residents 24/7 and know right away
+          when their help is needed.
+        </p>
+      </div>
+      <div>
+        <div class="navWrapOuter row">
+          <ul class="navUL">
+            <li><button class="auPairAreaBtn">Neurology</button></li>
+            <li><button class="auPairAreaBtn">Surgery</button></li>
+            <li><button class="auPairAreaBtn">Orthopaedics</button></li>
+            <li><button class="auPairAreaBtn">Internal medicine</button></li>
+          </ul>
+
+          <ul class="navUL">
+            <li><button class="auPairAreaBtn">Rehabilitation</button></li>
+            <li><button class="auPairAreaBtn">Acute Care</button></li>
+            <li><button class="auPairAreaBtn">Psychiatric</button></li>
+            <li><button class="auPairAreaBtn">Geriatrics</button></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -73,7 +184,7 @@
     <aside>
       <div>
         <h3>Ready to learn More?</h3>
-        <p>Schedule a private meeting now</p>
+        <p>Schedule a meeting now</p>
       </div>
       <div class="asideButtonDiv">
         <a href="#">Get Started</a>
@@ -83,7 +194,7 @@
   </div>
   <div class="container2">
     <div class="blackBackground">
-      <img src="images/logo-white.png" />
+      <img src="imgs/synco-logo.png" />
       <div class="address">
         <p>
           2307 Irving Street, Suite 228<br>
