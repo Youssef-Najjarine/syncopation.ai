@@ -10,223 +10,387 @@
   <meta property="og:image" content="https://youssef-najjarine.github.io/syncopation.ai/imgs/synco-emblem.png" />
   <link rel="shortcut icon" href="imgs/synco-emblem.png" />
   <meta property="og:description" content="AI accident prevention software." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
   <title>SyncopationAI</title>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="layout.css">
   <script defer src="main.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-
-  <div class="container1">
-    <div class="column-full">
-      <div>
-        <img src="imgs/synco-logo.png" />
-      </div>
-      <div>
-        <div class="dropdown">
-          <button class="dropbtn">Platform</button>
-          <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-          </div>
+  <header>
+    <div class="container1">
+      <div class="row1">
+        <div>
+          <img class="syncLogo" src="imgs/synco-logo.png" />
         </div>
-        <div class="dropdown">
-
-          <button class="dropbtn">Resources</button>
-          <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-          </div>
+        <div>
+          <button class="styleBtns requestDemo">Request a demo</button>
         </div>
-        <div class="dropdown">
-          <button class="dropbtn">Company</button>
-          <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-          </div>
-        </div>
-        <button class="contactUs">Contact Us</button>
       </div>
     </div>
-  </div>
-  <div class="greyLine"></div>
-  <div class="container1">
-    <div class="hero">
-      <img src="imgs/hospital-bed.jpg">
+  </header>
+  <main>
+    <div class="titleDiv hideOnRequest">
       <div>
-        <h1>Patient Fall Prevention Reimagined
-        </h1>
-        <p>
-          Patient falls are a significant concern in hospitals and care centers worldwide, especially in elderly and
-          senior care.
-          According to recent statistics, approximately 700,000 to 1 million patient falls occur in U.S. hospitals each
-          year, resulting in up to 250,000 injuries and 11,000 deaths. With the aging population expected to double by
-          2060, the need for improved fall solutions becomes even more crucial. Recent methods of monitoring are often
-          invasive and costly, and do not provide real-time assistance.
-        </p>
-        <a href="#">Get Started</a>
+        <h1 class="roboto-medium">Fall Prevention Reimagined</h1>
+        <p class="roboto-regular">AI Driven. Patient Centered.</p>
       </div>
     </div>
-  </div>
-
-  <div class="container2">
-    <div class="greyBackground">
-      <div class="headerSection">
-        <h2>Monitored Activities</h2>
-        <p>
-          By utilizing cameras and advanced computer vision techniques we provide patient's real-time monitoring,
-          prompt alerts, and enhanced safety measures for healthcare facilities. According to Syneos Health
-          Communications, 64 percent of patients reported they would be comfortable with
-          AI virtual monitoring.
-        </p>
-      </div>
-      <div>
-        <div class="navWrapOuter">
-          <div class="navWrapInner row">
-            <ul class="navUL">
-              <li>
-                <a href="#" class="monActBtn">
-                  RESTLESS IN BED
-                  <div class="bubblePosition1 hoverBubble1">
-                    <p>
-                      Alerts staff when a patient is moving in bed, might be waking up, or might need help.
-                    </p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="monActBtn">
-                  BED EXIT
-                  <div class="bubblePosition1 hoverBubble1">
-                    <p>
-                      Alerts staff when frail a monitored patient or resident is about to get
-                      up or needs help. Customized alerts prevent falls effectively.
-                    </p>
-                  </div>
-                </a>
-              </li>
-            </ul>
-
-            <ul class="navUL">
-              <li>
-                <a href="#" class="monActBtn">
-                  ROOM & TOILET EXIT
-                  <div class="bubblePosition2 hoverBubble2">
-                    <p>
-                      Alerts staff when a patient falls or needs help on toilet. Room exit
-                      alerts for wandering patients or residents.
-                    </p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="monActBtn">
-                  PATIENT FALL
-                  <div class="bubblePosition3 hoverBubble3">
-                    <p>
-                      Alerts staff if a patient has fallen and needs immediate assistance.
-                      Low-cost, low-maintenance off-the-shelf cameras. Choose a 360 fisheye camera for precise analyze
-                      with no
-                      blind spots.
-
-                      AI automatically analizyses visible human actions - pattern recognition and secured lines support
-                      patient
-                      privacy.
-                      HIPPA compliant data processing.
-                      No data is saved or seen, only real-time generated alerts of risky situations.
-                      Unobtrusive, contactless, no wearables needed.
-                    </p>
-                  </div>
-                </a>
-              </li>
-            </ul>
+    <section class="container1 hideOnRequest">
+      <div class="infoStrip">
+        <div class="row2">
+          <div class="col-fifty">
+            <h2 class="descHeader roboto-regular">The Problem</h2>
+            <p class="desc roboto-regular">
+              700,000 to 1 million patient falls occur in U.S. hospitals
+              each year, resulting in up to 250,000 injuries and 11,000
+              deaths. With the aging population expected to double by
+              2060, fall prevention solutions become even more crucial.
+            </p>
+            <div>
+              <button id="learnMore1" class="styleBtns">Learn more</button>
+            </div>
+          </div>
+          <div class="imgRight row2 col-fifty">
+            <img class="descImg" src="imgs/img1.png" />
           </div>
         </div>
       </div>
-    </div>
-  </div>
-
-  <div class="container2">
-    <div class="greyBackground">
-      <div class="headerSection">
-        <h2>AuPair Speciality Areas</h2>
-        <p>
-          In elderly care, residents are often frail and might suffer from dementia and memory illnesses. Patients like
-          this are at great risk of falling or wandering off and getting lost. Residents still deserve to maintain their
-          dignity and independence. With AuPair, nurses and caretakers can care for residents 24/7 and know right away
-          when their help is needed.
-        </p>
+    </section>
+    <section id="part1" class="hideOnRequest">
+      <div class="blueStrip">
+        <div class="row2 container1">
+          <div class="col-sixty">
+            <p class="lrgBlueTxt roboto-bold">
+              The staggering financial and psychosocial cost
+              of falls affirms the importance of securing
+              fall prevention modalities.
+            </p>
+          </div>
+          <div class="col-forty">
+            <p class="desc roboto-regular">
+              Falls are one of the most documented hospital incidents
+              with up to 1 million falls annually and 2.3 to 7 falls
+              per 1,000 inpatient days. They increase additional hospital stays
+              by 6-12 days and expenses totaling
+              more than $31 billion annually to Medicare.
+            </p>
+          </div>
+        </div>
       </div>
+      <div class="blueStrip">
+        <div class="row2 container1">
+          <div class="col-sixty">
+            <p class="desc roboto-regular">
+              Many hospitals use alarm systems to prevent falls by alerting staff
+              when patients move without assistance. However, a study of nearly 28,000
+              patients revealed that alarms don&#39;t actually reduce falls or related
+              injuries. While robust staffing is the ideal solution, it remains cost-prohibitive.
+            </p>
+          </div>
+          <div class="col-forty">
+            <p class="lrgBlueTxt roboto-bold">
+              Existing solutions fail to deliver.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="blueStrip">
+        <div class="row2 container1">
+          <div class="col-sixty">
+            <p class="lrgBlueTxt roboto-bold">
+              We are committed to implementing AI driven solutions that
+              ensure patient safety and care.
+            </p>
+          </div>
+          <div class="col-forty">
+            <p class="desc roboto-regular">
+              At SyncopationAI, we prioritize and are proactivly adressing fall prevention, due to
+              complex factors such as delirium, debilitation, and other medical comorbidities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container1 hideOnRequest">
+      <div class="infoStrip">
+        <div class="row2">
+          <div class="row2 col-fifty">
+            <img class="descImg" src="imgs/img2.png" />
+          </div>
+          <div class="col-fifty txtRight">
+            <div class="col-eighty">
+              <h2 class="descHeader roboto-regular">Our Solution</h2>
+              <p class="desc roboto-regular">
+                SyncopationAI is an elderly risk prevention software that
+                integrates into various care models to ensure that patients
+                receive suitable care. By utilizing advanced AI methods, we
+                provide patients and providers with prompt alerts, enhanced
+                safety measures, and enhanced real-time safety measures. Our
+                model tracks vital signs, prevents falls, and predicts
+                probable health challenges before they become emergencies.
+              </p>
+              <div>
+                <button id="learnMore2" class="styleBtns">Learn more</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="part2" class="hideOnRequest">
+      <div class="blueStrip">
+        <div class="row2 container1">
+          <div class="col-sixty">
+            <p class="lrgBlueTxt roboto-bold">
+              Our AI-powered system continuously monitors, predicts, and enhances
+              patient safety to prevent falls.
+            </p>
+          </div>
+          <div class="col-forty">
+            <p class="desc roboto-regular">
+              By providing instant alerts to healthcare staff, we ensure timely interventions
+              that significantly reduce fall incidents.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="blueStrip">
+        <div class="row2 container1">
+          <div class="col-sixty">
+            <p class="desc roboto-regular">
+              SyncopationAI provides a smooth implementation process
+              without disrupting daily operations. This interoperability
+              enhances overall efficiency, allowing for comprehensive
+              patient safety management across various healthcare settings.
+            </p>
+          </div>
+          <div class="col-forty">
+            <p class="lrgBlueTxt roboto-bold">
+              SyncopationAI can be integrated with existing hospital systems.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="blueStrip">
+        <div class="row2 container1">
+          <div class="col-sixty">
+            <p class="lrgBlueTxt roboto-bold">
+              Our technology fosters proactive patient engagement by
+              delivering personalized care plans tailored to individual
+              needs.
+            </p>
+          </div>
+          <div class="col-forty">
+            <p class="desc roboto-regular">
+              This approach not only prevents falls but also significantly
+              improves overall patient well-being and satisfaction, leading
+              to better healthcare outcomes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="carousel hideOnRequest">
+      <div class="arrowsAndImage">
+        <div>
+          <img src="imgs/leftAngle.png" class="leftAngle" />
+        </div>
+        <div class="carouselMidSec">
+          <h2 class="roboto-medium howItWorks">How it Works</h2>
+          <img class="carouselImg" src="imgs/1.png" data-active="true" data-bar="bar1" />
+          <img class="carouselImg" src="imgs/2.png" data-active="false" data-bar="bar2" />
+          <img class="carouselImg" src="imgs/3.png" data-active="false" data-bar="bar3" />
+          <img class="carouselImg" src="imgs/4.png" data-active="false" data-bar="bar4" />
+          <img class="carouselImg" src="imgs/5.png" data-active="false" data-bar="bar5" />
+          <img class="carouselImg" src="imgs/6.png" data-active="false" data-bar="bar6" />
+          <img class="carouselImg" src="imgs/7.png" data-active="false" data-bar="bar7" />
+          <img class="carouselImg" src="imgs/8.png" data-active="false" data-bar="bar8" />
+          <p class="roboto-regular carouselDesc" data-active="true" data-bar="bar1">Nurse sets up AuPair camera</p>
+          <h3 class="carouselStepDesc roboto-bold" data-active="true" data-bar="bar1">Step 1</h3>
+          <p class="roboto-regular carouselDesc" data-active="false" data-bar="bar2">
+            Tablet demonstrates patient live-view mode upon setup
+          </p>
+          <h3 class="carouselStepDesc roboto-bold" data-active="false" data-bar="bar2">Step 2</h3>
+          <p class="roboto-regular carouselDesc" data-active="false" data-bar="bar3">
+            Tablet at nursing station reverts to task management mode, reporting events and notifications
+          </p>
+          <h3 class="carouselStepDesc roboto-bold" data-active="false" data-bar="bar3">Step 3</h3>
+          <p class="roboto-regular carouselDesc" data-active="false" data-bar="bar4">
+            Nurse leaves to attend to others
+          </p>
+          <h3 class="carouselStepDesc roboto-bold" data-active="false" data-bar="bar4">Step 4</h3>
+          <p class="roboto-regular carouselDesc" data-active="false" data-bar="bar5">
+            AuPair observes patient remove bed covers, and inch towards edge; triggers high alert
+          </p>
+          <h3 class="carouselStepDesc roboto-bold" data-active="false" data-bar="bar5">Step 5</h3>
+          <p class="roboto-regular carouselDesc" data-active="false" data-bar="bar6">
+            Alarm sounds in room; AI voice and avatar reinforce the patient&#39;s return to bed
+          </p>
+          <h3 class="carouselStepDesc roboto-bold" data-active="false" data-bar="bar6">Step 6</h3>
+          <p class="roboto-regular carouselDesc" data-active="false" data-bar="bar7">
+            Alarm sounds at nursing station. Alert is directed to assigned nurse&#39;s personal device as well
+          </p>
+          <h3 class="carouselStepDesc roboto-bold" data-active="false" data-bar="bar7">Step 7</h3>
+          <p class="roboto-regular carouselDesc" data-active="false" data-bar="bar8">
+            Nurse returns patient to bed, preventing a potential fall from occurring
+          </p>
+          <h3 class="carouselStepDesc roboto-bold" data-active="false" data-bar="bar8">Step 8</h3>
+
+          <div class="dotsDiv">
+            <img src="imgs/bars/1st-bar-active.png" class="active" data-bar="bar1" data-active="true" />
+            <img src="imgs/bars/1st-bar.png" class="inactive" data-bar="bar1" />
+            <img src="imgs/bars/2nd-bar-active.png" class="active" data-bar="bar2" data-active="false" />
+            <img src="imgs/bars/2nd-bar.png" class="inactive" data-bar="bar2" />
+            <img src="imgs/bars/3rd-bar-active.png" class="active" data-bar="bar3" data-active="false" />
+            <img src="imgs/bars/3rd-bar.png" class="inactive" data-bar="bar3" />
+            <img src="imgs/bars/4th-bar-active.png" class="active" data-bar="bar4" data-active="false" />
+            <img src="imgs/bars/4th-bar.png" class="inactive" data-bar="bar4" />
+            <img src="imgs/bars/5th-bar-active.png" class="active" data-bar="bar5" data-active="false" />
+            <img src="imgs/bars/5th-bar.png" class="inactive" data-bar="bar5" />
+            <img src="imgs/bars/6th-bar-active.png" class="active" data-bar="bar6" data-active="false" />
+            <img src="imgs/bars/6th-bar.png" class="inactive" data-bar="bar6" />
+            <img src="imgs/bars/7th-bar-active.png" class="active" data-bar="bar7" data-active="false" />
+            <img src="imgs/bars/7th-bar.png" class="inactive" data-bar="bar7" />
+            <img src="imgs/bars/8th-bar-active.png" class="active" data-bar="bar8" data-active="false" />
+            <img src="imgs/bars/8th-bar.png" class="inactive" data-bar="bar8" />
+          </div>
+          <div class="aiPoweredMon">
+            <p class="roboto-bold">AI Powered Monitoring</p>
+            <h6 class="roboto-regular">How We Do It</h6>
+          </div>
+        </div>
+        <div>
+          <img src="imgs/rightAngle.png" class="rightAngle" />
+        </div>
+      </div>
+    </section>
+    <section class="container1 hoverDesc hideOnRequest">
+      <div class="row1">
+        <div class="grow col-twenty-five smHovDesc">
+          <h2 class="roboto-regular"><img src="imgs/icons/eye.png" /> <br />The AuPair</h2>
+          <p class="roboto-regular">AuPair provides 24/7 monitoring</p>
+        </div>
+        <div class="grow col-seventy lrgHovDesc">
+          <h2 class="roboto-regular"><img src="imgs/icons/essentials.png" /> <br />Our AI</h2>
+          <p class="roboto-regular">
+            Our AI model provides exceptional solutions across various healthcare settings
+          </p>
+        </div>
+      </div>
+      <div class="row1">
+        <div class="grow col-seventy lrgHovDesc">
+          <h2 class="roboto-regular"><img src="imgs/icons/globe.png" /> <br />Effective Communication</h2>
+          <p class="roboto-regular">
+            SyncopationAI ensures essential information reaches the right people
+          </p>
+        </div>
+        <div class="grow col-twenty-five smHovDesc">
+          <h2 class="roboto-regular"><img src="imgs/icons/Lock.png" /> <br />Secure and Encrypted</h2>
+          <p class="roboto-regular">Confidential information kept safe</p>
+        </div>
+      </div>
+      <div class="row1">
+        <div class="grow col-twenty-five smHovDesc">
+          <h2 class="roboto-regular"><img src="imgs/icons/Folder.png" /> <br /> Access to EHR</h2>
+          <p class="roboto-regular">Works with most EHR providers</p>
+        </div>
+        <div class="grow col-seventy lrgHovDesc">
+          <h2 class="roboto-regular"><img src="imgs/icons/Folder.png" /> <br /> System Integration</h2>
+          <p class="roboto-regular">Seamlessly integrates into existing hospital systems and operations</p>
+        </div>
+      </div>
+    </section>
+    <section class="btmDiv hideOnRequest">
       <div>
-        <div class="navWrapOuter row">
-          <ul class="navUL">
-            <li><button class="auPairAreaBtn">Neurology</button></li>
-            <li><button class="auPairAreaBtn">Surgery</button></li>
-            <li><button class="auPairAreaBtn">Orthopaedics</button></li>
-            <li><button class="auPairAreaBtn">Internal medicine</button></li>
-          </ul>
-
-          <ul class="navUL">
-            <li><button class="auPairAreaBtn">Rehabilitation</button></li>
-            <li><button class="auPairAreaBtn">Acute Care</button></li>
-            <li><button class="auPairAreaBtn">Psychiatric</button></li>
-            <li><button class="auPairAreaBtn">Geriatrics</button></li>
-          </ul>
+        <h1 class="roboto-medium">Interested in learning more?</h1>
+        <p class="roboto-regular">Come see SyncopationAI in action</p>
+        <div>
+          <button class="styleBtns requestDemo">Request a demo</button>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="container1">
-    <aside>
-      <div>
-        <h3>Ready to learn More?</h3>
-        <p>Schedule a meeting now</p>
-      </div>
-      <div class="asideButtonDiv">
-        <a href="#">Get Started</a>
-      </div>
-    </aside>
-
-  </div>
-  <div class="container2">
-    <div class="blackBackground">
-      <img src="imgs/synco-logo.png" />
-      <div class="address">
-        <p>
-          2307 Irving Street, Suite 228<br>
-          San Francisco CA 94122<br>
-          (800) 370-1416<br>
-          <a href="#">info@canvasmedical.com</a>
+    </section>
+    <section id="requestDemoSection" class="container1">
+      <div class="col-forty">
+        <h1 id="reqDemoHeader" class="roboto-medium">Request a demo to see SyncopationAI in action</h1>
+        <h1 id="returnHomeHeader" class="roboto-medium">Your request has been submitted.
+          Our team will reach out to you shortly</h1>
+        <p id="reqDemoDesc" class="roboto-regular">
+          Fill out the following form; our team will reach out to answer any questions,
+          and schedule a time to showcase our AI powered solutions
         </p>
-      </div>
-      <div class="companyAndProductColumn">
-        <div class="company">
-          <h6>company</h6>
-          <a href="#">About Us</a>
-          <a href="#">Blog</a>
-        </div>
-
-        <div class="product">
-          <h6>product</h6>
-          <a href="#">Product</a>
-          <a href="#">Implementation</a>
-          <a href="#">For Health Plans</a>
-          <a href="#">Security</a>
+        <div>
+          <button id="returnHome" class="roboto-medium">Return home</button>
         </div>
       </div>
+      <div class="col-fifty-five">
+        <form id="reqDemoForm">
+          <div class="reqRow">
+            <div class="col-forty-five">
+              <label class="roboto-medium reqLbl">First name*<br />
+                <input type="text" id="firstNmToSbmt" class="reqNameInps" required />
+              </label>
+            </div>
+            <div class="col-forty-five">
+              <label class="roboto-medium reqLbl">Last name*<br />
+                <input type="text" id="lastNmToSbmt" class="reqNameInps" required />
+              </label>
+            </div>
+          </div>
+          <div class="reqMisc">
+            <label class="roboto-medium reqLbl">
+              Email address*<br />
+              <input id="emailToSbmt" type="email" class="reqInp" required />
+            </label>
+          </div>
+          <div class="reqMisc">
+            <label class="roboto-medium reqLbl">
+              Phone*<br />
+              <input type="number" class="reqInp" id="phoneToSbmt" />
+            </label>
+          </div>
+          <div class="reqMisc">
+            <label class="roboto-medium reqLbl">
+              What can we help you with? Any specific questions?
+            </label><br />
+            <textarea rows="10" cols="10" id="questionsToSbmt"></textarea>
+          </div>
+          <div><input type="submit" text="Submit" id="sbmtReq" class="roboto-medium" /></div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer id="footer" class="container1">
+    <section class="footerRow">
+      <div class="col-fifty">
+        <img src="imgs/synco-logo.png" class="footerImg syncLogo" />
+        <p class="roboto-regular">
+        </p>
+        <address class="address roboto-regular">
+          <b>Address: 855 Maude Ave, Mountain View CA 94043</b>
+        </address>
+      </div>
+      <div class="col-fifty">
+        <div class="align-right">
+          <a href="https://www.linkedin.com/company/syncopation-ai/" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="width:30px">
+              <path
+                d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+            </svg>
+          </a>
+        </div>
+      </div>
 
-    </div>
-
-    <div class="footer">
-      <a href="#">Privacy & Terms</a>
-      <a href="#">Contact Us</a>
-    </div>
-  </div>
+    </section>
+  </footer>
 </body>
 
 </html>
