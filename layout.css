@@ -1,16 +1,300 @@
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+body {
+  margin: 0;
+}
+
+.carouselMidSec {
+  margin: 0 50px;
+}
+
+.aiPoweredMon {
+  text-align: center;
+}
+
+.aiPoweredMon p {
+  margin-bottom: 15px;
+  color: #24384C;
+  font-size: 30px;
+}
+
+.aiPoweredMon h6 {
+  margin-top: 0;
+  color: #595959;
+  font-size: 20px;
+}
+
 .container1 {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1800px;
 }
 
-.hero img {
-  width: 100%;
+.container2 {
+  margin: 0 auto;
+  max-width: 1300px;
 }
 
-.row {
-  font-size: 20px;
-  line-height: 40px;
-  margin-top: 50px;
+.row1 {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 30px 0;
+}
+
+.reqRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 30px 0;
+}
+
+.reqMisc {
+  border-color: lightgrey;
+  margin-top: 30px;
+}
+
+.syncLogo,
+#sbmtReq {
+  cursor: pointer;
+}
+
+.reqMisc textarea {
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+#requestDemoSection {
+  display: flex;
+  margin-top: 100px;
+  height: 70vh;
+}
+
+#requestDemoSection h1 {
+  font-size: 77px;
+  color: #24384C;
+}
+
+#requestDemoSection p {
+  font-size: 30px;
+  color: #595959;
+}
+
+.footerRow {
+  margin: 50px 0;
+  display: flex;
+  align-items: center;
+}
+
+.row1 img {
+  width: 300px;
+}
+
+.row2 {
+  display: flex;
+}
+
+.imgRight {
+  justify-content: right;
+}
+
+.txtRight {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.descImg {
+  width: 80%;
+  border-radius: 5px;
+}
+
+.hoverDesc {
+  margin: 50px auto;
+}
+
+.column-full {
+  width: 100%
+}
+
+.col-eighty {
+  width: 80%;
+}
+
+.col-seventy {
+  width: 70%;
+}
+
+.col-sixty {
+  width: 60%;
+}
+
+.col-fifty-five {
+  width: 55%;
+}
+
+.col-fifty {
+  width: 50%;
+}
+
+.col-forty-five {
+  width: 45%;
+}
+
+.col-forty {
+  width: 40%;
+}
+
+.col-twenty-five {
+  width: 25%;
+}
+
+.titleDiv div p {
+  color: #242424;
+  margin: 0px 0 50px 0;
+}
+
+.titleDiv,
+.blueStrip {
+  background-color: #F2FAFF;
+  padding: 50px 0;
+}
+
+.btmDiv {
+  margin-top: 20px;
+  background: linear-gradient(to right, #73B8E3 0%, #FFFFFF 100%);
+  padding: 50px 0;
+}
+
+
+
+.btmDiv:hover {
+  padding: 50px 0;
+  background: linear-gradient(to right, #24384C 0%, #FFFFFF 100%);
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btmDiv div h1 {
+  margin-bottom: 0;
+}
+
+.btmDiv div,
+.titleDiv div {
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#footer img {
+  width: 300px;
+}
+
+.grow h2 img {
+  width: 22px
+}
+
+.reqLbl {
+  font-size: 20px;
+}
+
+.reqNameInps {
+  width: 100%;
+  height: 40px;
+  border-color: lightgrey;
+}
+
+.reqNameInps,
+.reqInp {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border-color: lightgrey;
+  margin-top: 10px;
+}
+
+.reqInp::placeholder {
+  font-family: 'roboto-medium';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  padding: 20px 10px 0 5px;
+  color: gray;
 }
