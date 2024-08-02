@@ -2,48 +2,124 @@ h1 {
   color: #24384C;
 }
 
+.descHeader,
 .descHeader {
-  font-size: 50px;
-  margin-bottom: 0;
+  margin-top: 0;
+  color: #24384C;
+  font-size: 40px;
+  margin-bottom: 24px;
+  line-height: 110%;
 }
 
-.desc {
-  font-size: 25px;
-  line-height: 45px;
-  width: 700px;
+.descHeader1Div {
+  margin-top: 34px;
+}
+
+.descHeader2Div {
+  margin-top: 18px;
+}
+
+#learnMore3,
+#learnMore4 {
+  margin-top: 16px;
 }
 
 .lrgBlueTxt {
-  font-size: 50px;
-  line-height: 80px;
-  width: 700px;
+  margin: 0;
+  font-size: 40px;
+  line-height: 48px;
+  width: 619px;
   color: #175CD3;
+}
+
+.desc {
+  margin: 0;
+  font-size: 24px;
+  line-height: 32px;
+  width: 750px;
+}
+
+.infoDesc {
+  margin: 0 0 24px 0;
+  font-size: 24px;
+  line-height: 32px;
+  width: 619px;
+}
+
+.firstLrgBlue {
+  margin: 24px 0 0 0;
+}
+
+.secondLrgBlue {
+  margin: 104px 0 0 0;
+}
+
+.thirdLrgBlue {
+  margin: 82px 0 24px 0;
+}
+
+.fourthLrgBlue {
+  margin: 60px 0 0 0;
+}
+
+.fifthLrgBlue {
+  margin: 58px 0 24px 0;
+}
+
+.firstDescTxt {
+  margin: 62px 0 0 0;
+}
+
+.secondDescTxt {
+  margin: 46px 0 0 0;
+}
+
+.thirdDescTxt {
+  margin: 128px 0 74px 0;
+}
+
+.fourthDescTxt {
+  margin: 86px 0 0 0;
+}
+
+.fifthDescTxt {
+  margin: 54px 0 0 0;
+}
+
+.sixthDescTxt {
+  margin: 128px 0 98px 0;
 }
 
 #returnHome,
 #sbmtReq {
-  width: 100%;
-  margin-top: 10px;
-  height: 40px;
   border-radius: 5px;
   background-color: #24384C;
   color: white;
   border: 1px solid transparent;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5)
+}
+
+#sbmtReq {
+  width: 100%;
+  margin-top: 24px;
+  height: 45px;
+}
+
+#returnHome {
+  width: 730px;
+  height: 45px;
+  margin-bottom: 197px;
 }
 
 .carouselStepDesc {
   color: #175CD3;
-  font-size: 20px;
+  font-size: 24px;
+  margin: 0 0 12px 0;
 }
 
 .styleBtns {
   cursor: pointer;
-  font-size: 16px;
-  font-weight: 600;
-  min-height: 60px;
   text-decoration: none;
-  padding: 16px 24px;
   color: white;
   border-radius: 5px;
   background-color: #24384C;
@@ -51,40 +127,46 @@ h1 {
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5)
 }
 
-.infoStrip {
-  margin-top: 50px;
-  margin-bottom: 20px;
-}
-
 .address {
   font-style: normal;
+  color: #595959;
+  line-height: 40px;
+  font-size: 24px;
+  margin: 31.16px 0 0 0;
 }
 
 .grow {
   background-color: #24384C;
   padding: 5px 5px 5px 5px;
   border-radius: 20px;
-  height: 90px;
-  width: 22%;
-  margin: 5px 1% 5px 0;
+  height: 132px;
+  margin: 0;
   transition: height 0.5s;
   -webkit-transition: height 0.5s;
   overflow: hidden;
   transition: 1.5s;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5)
+}
+
+.grow img {
+  margin: 16px 0 14px 14px;
+  width: 32px
 }
 
 .grow h2 {
   color: #73B8E3;
-  margin: 0 0 35px 10px;
-  font-size: 35px;
+  margin: 0 0 5.27px 10px;
+  font-size: 24px;
+  line-height: 150%;
 }
 
 .grow p {
   color: white;
-  font-size: 35px;
+  font-size: 20px;
+  margin: 0 0 10.04px 12.66px;
 }
 
-.smHovDesc:hover {
+/* .smHovDesc:hover {
   transition: all .75s ease-in-out;
   height: 170px;
   width: 40vw;
@@ -94,25 +176,24 @@ h1 {
   transition: all .75s ease-in-out;
   height: 170px;
   width: 80vw;
-}
+} */
 
 .howItWorks {
-  font-size: 50px;
+  color: #24384C;
+  margin: 0px 0 24px 0;
+  font-size: 40px;
+  line-height: 110%;
   text-align: center;
 }
 
-.carouselMidSec {
-  max-width: 750px;
-}
-
 .carouselImg {
-  width: 700px;
+  width: 620px;
+  margin-bottom: 22px;
 }
 
-.arrowsAndImage {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.playPauseBtns {
+  width: 72px;
+  cursor: pointer;
 }
 
 .hidden {
@@ -129,8 +210,8 @@ h1 {
 
 .dotsDiv {
   display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
+  max-width: 620px;
+  width: 620px;
 }
 
 .dotsDiv img {
@@ -138,15 +219,22 @@ h1 {
   cursor: pointer;
 }
 
+.dotsDiv img:not(:last-child) {
+  margin: 0 8px 0 0;
+}
+
 .leftAngle,
 .rightAngle {
-  width: 100px;
+  width: 72px;
   border: none;
   cursor: pointer;
+  margin: 248px 241px 247px 241px;
 }
 
 .carouselDesc {
-  margin-bottom: 0;
-  font-size: 30px;
-  line-height: 50px;
+  color: #24384C;
+  margin: 0 0 10px 0;
+  font-size: 32px;
+  line-height: 150%;
+  width: 621px;
 }
