@@ -1,4 +1,5 @@
-body {
+body,
+html {
   overflow-x: hidden;
 }
 
@@ -191,30 +192,29 @@ header {
 #requestDemoSection {
   display: flex;
   margin: 140.16px 90px 99px 90px;
+  overflow: visible;
 }
 
 .reqFooter {
   display: flex;
+  justify-content: space-between;
   margin: 0 90px 53px 90px;
 }
 
 .reqDemoHeaderSec {
-  margin-right: 86px;
+  margin-right: 66px;
 }
 
 #reqDemoHeader,
 #returnHomeHeader {
-  font-size: 64px;
-  line-height: 72px;
+  font-size: 76px;
+  line-height: 85px;
   color: #24384C;
 }
 
-#reqDemoHeader {
-  width: 730px;
-}
-
 #returnHomeHeader {
-  width: 730px;
+  font-size: 76px;
+  width: 53%;
 }
 
 #reqDemoHeader {
@@ -227,10 +227,9 @@ header {
 
 #requestDemoSection p {
   margin: 0;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 35px;
+  line-height: 40px;
   color: #595959;
-  width: 750px;
 }
 
 .footerRow {
@@ -442,14 +441,6 @@ header {
   margin: 0 144px 40px 0;
 }
 
-.reqFootSecOne {
-  width: 50%;
-}
-
-.reqFootSecTwo {
-  width: 50%;
-}
-
 .socials a svg {
   width: 40px;
 }
@@ -557,24 +548,17 @@ header {
     margin: 0 80px 53px 80px;
   }
 
-  .reqFootSecOne {
-    width: 50%;
-  }
-
-  .reqFootSecTwo {
-    width: 40%;
-  }
-
   .reqDemoHeaderSec {
     margin-right: 30px;
   }
 
   #reqDemoHeader {
-    width: 624px;
+    font-size: 96px;
+    line-height: 102px;
   }
 
   #returnHomeHeader {
-    width: 624px;
+    font-size: 78px;
   }
 
   #returnHome {
@@ -582,7 +566,8 @@ header {
   }
 
   #requestDemoSection p {
-    width: 624px;
+    font-size: 36px;
+    line-height: 43px;
   }
 
   .firstNmDiv {
@@ -728,11 +713,20 @@ header {
     display: flow-root;
   }
 
+  #firstNmToSbmt,
+  #lastNmToSbmt {
+    width: 521px;
+  }
+
   .lastNmDiv,
   .emailDiv,
   .phoneDiv,
   .questionDiv {
     margin-top: 24px;
+  }
+
+  .firstNmDiv {
+    margin-right: 0;
   }
 
   #emailToSbmt,
@@ -745,24 +739,8 @@ header {
     margin: 0 60px 53px 60px;
   }
 
-  .reqFootSecOne {
-    width: 40%;
-  }
-
-  .reqFootSecTwo {
-    width: 40%;
-  }
-
   .reqDemoHeaderSec {
     margin-right: 38px;
-  }
-
-  #reqDemoHeader {
-    width: 520px;
-  }
-
-  #returnHomeHeader {
-    width: 601px;
   }
 
   #returnHome {
@@ -770,7 +748,7 @@ header {
   }
 
   #requestDemoSection p {
-    width: 520px;
+    font-size: 34px;
   }
 }
 
@@ -789,6 +767,14 @@ header {
 
   .infoStrip2 {
     margin: 70px 50px 0 50px;
+  }
+
+  .ourSolRow {
+    align-items: center;
+  }
+
+  .row3 {
+    margin: 0 50px;
   }
 
   .descImg {
@@ -919,9 +905,12 @@ header {
     margin-top: 24px;
   }
 
+  #firstNmToSbmt,
+  #lastNmToSbmt,
   #emailToSbmt,
   #phoneToSbmt,
-  .reqMisc textarea {
+  .reqMisc textarea,
+  #sbmtReq {
     width: 432px;
   }
 
@@ -929,22 +918,13 @@ header {
     margin: 0 50px 53px 50px;
   }
 
-  .reqFootSecOne {
-    width: 40%;
-  }
-
-  .reqFootSecTwo {
-    width: 30%;
-  }
-
   .reqDemoHeaderSec {
     margin-right: 30px;
   }
 
   #reqDemoHeader {
-    font-size: 56px;
-    line-height: 64px;
-    width: 430px;
+    font-size: 97px;
+    line-height: 93px;
     margin-bottom: 51px;
   }
 
@@ -961,7 +941,14 @@ header {
   }
 
   #requestDemoSection p {
-    width: 430px;
+    font-size: 45px;
+    line-height: 50px;
+  }
+}
+
+@media (max-width:1218px) {
+  #requestDemoSection {
+    overflow: scroll;
   }
 }
 
@@ -1036,6 +1023,10 @@ header {
     width: 100%;
   }
 
+  .expOnSmallScrn {
+    width: 100%;
+  }
+
   .descImg {
     width: 100%;
     margin: 0 0 24px 0;
@@ -1053,7 +1044,7 @@ header {
 
   .lrgBlueTxt,
   .desc {
-    width: 704px;
+    width: 100%;
   }
 
   .firstDescTxt,
@@ -1113,7 +1104,7 @@ header {
   }
 
   .lrgHovDesc {
-    width: 100%;
+    width: 98.5%;
   }
 
   .grow p {
@@ -1147,14 +1138,8 @@ header {
     margin-top: 24px;
   }
 
-  #firstNmToSbmt {
-    width: 295px;
-  }
-
-  #lastNmToSbmt {
-    width: 297px;
-  }
-
+  #firstNmToSbmt,
+  #lastNmToSbmt,
   #emailToSbmt,
   #phoneToSbmt,
   .reqMisc textarea {
@@ -1170,10 +1155,9 @@ header {
   }
 
   #reqDemoHeader {
-    font-size: 48px;
-    line-height: 56px;
+    font-size: 75px;
+    line-height: 68px;
     margin-bottom: 49px;
-    width: 340px;
   }
 
   #returnHomeHeader {
@@ -1197,7 +1181,7 @@ header {
   }
 
   #requestDemoSection p {
-    width: 340px;
+    font-size: 41px;
   }
 }
 
@@ -1228,6 +1212,10 @@ header {
 
   .titleDiv div p {
     margin-top: 10px;
+  }
+
+  .expOnSmallScrn {
+    width: 410px;
   }
 
   .infoStrip {
@@ -1419,7 +1407,7 @@ header {
 
   .lrgHovDesc,
   .smHovDesc {
-    width: 100%;
+    width: 98.5%;
     margin-bottom: 24px;
   }
 
@@ -1486,6 +1474,17 @@ header {
     margin: 49.09px 10px 83px 10px;
   }
 
+  #reqDemoForm,
+  .reqRow {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .firstNmDiv {
+    margin-right: 0;
+  }
+
   .lastNmDiv,
   .emailDiv,
   .phoneDiv,
@@ -1511,29 +1510,19 @@ header {
     margin: 0 10px 20px 10px;
   }
 
-  .reqFootSecOne {
-    width: 28%;
-  }
-
-  .reqFootSecTwo {
-    width: 30%;
-  }
-
   .reqDemoHeaderSec {
     margin-right: 22px;
   }
 
   #reqDemoHeader {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 59px;
+    line-height: 52px;
     margin-bottom: 22px;
-    width: 196px;
   }
 
   #returnHomeHeader {
-    font-size: 24px;
-    line-height: 32px;
-    width: 196px;
+    font-size: 42px;
+    line-height: 52px;
     margin-bottom: 24px;
   }
 
@@ -1551,9 +1540,8 @@ header {
   }
 
   #requestDemoSection p {
-    width: 196px;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 40px;
+    line-height: 45px;
   }
 }
 
@@ -1628,6 +1616,10 @@ header {
   .infoDesc,
   .col-fifty {
     width: 100%;
+  }
+
+  .expOnSmallScrn {
+    width: 300px;
   }
 
   .descImg {
@@ -1875,14 +1867,6 @@ header {
 
   .reqFooter {
     margin: 0 10px 20px 10px;
-  }
-
-  .reqFootSecOne {
-    width: 74%;
-  }
-
-  .reqFootSecTwo {
-    width: 30%;
   }
 
   .reqDemoHeaderSec {
