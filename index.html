@@ -14,7 +14,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
   <title>SyncopationAI</title>
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "g__DWUnsfuZY022EX",
+      });
+   })();
+</script>
   <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="layout.css">
@@ -433,32 +442,32 @@
           <div class="reqRow">
             <div class="firstNmDiv">
               <label class="inter-medium reqLbl">First name*<br />
-                <input type="text" id="firstNmToSbmt" class="reqNameInps" required />
+                <input type="text" id="firstNmToSbmt" class="reqNameInps" name="first_name" required />
               </label>
             </div>
             <div class="lastNmDiv">
               <label class="inter-medium reqLbl lastNmLbl">Last name*<br />
-                <input type="text" id="lastNmToSbmt" class="reqNameInps" required />
+                <input type="text" id="lastNmToSbmt" class="reqNameInps" name="last_name" required />
               </label>
             </div>
           </div>
           <div class="reqMisc emailDiv">
             <label class="inter-medium reqLbl">
               Email address*<br />
-              <input id="emailToSbmt" type="email" class="reqInp" required />
+              <input id="emailToSbmt" name="email" type="email" class="reqInp" required />
             </label>
           </div>
           <div class="reqMisc phoneDiv">
             <label class="inter-medium reqLbl">
               Phone<br />
-              <input type="number" class="reqInp" id="phoneToSbmt" />
+              <input type="number" class="reqInp" id="phoneToSbmt" name="phone" />
             </label>
           </div>
           <div class="reqMisc questionDiv">
             <label class="inter-medium reqLbl">
               What can we help you with? Any specific questions?
             </label><br />
-            <textarea rows="10" cols="10" id="questionsToSbmt"></textarea>
+            <textarea rows="10" cols="10" id="questionsToSbmt" name="message"></textarea>
           </div>
           <div><input type="submit" text="Submit" id="sbmtReq" class="inter-medium" /></div>
         </form>
