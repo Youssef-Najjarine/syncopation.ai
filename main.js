@@ -491,11 +491,21 @@ $(document).ready(function () {
 
   $('#reqDemoForm').submit(function (e) {
     e.preventDefault();
+    let formSubmitted = false;
+    emailjs.sendForm('service_mailtrap', 'template_s1hgzkm', '#reqDemoForm').then(
+      (response) => {
+        resetForm();
+      },
+      (error) => {
+        resetForm();
+      },
+    );
+  })
+  function resetForm() {
     $('#questionsToSbmt,#phoneToSbmt,#emailToSbmt,#firstNmToSbmt,#lastNmToSbmt').val('');
     $('#reqDemoForm,#reqDemoHeader,#reqDemoDesc').hide();
     $('#returnHome,#returnHomeHeader,#headerReqBtn').show();
-  })
-
+  }
   $('#btmDivReq').hover(function () {
     function loading() {
       document.querySelectorAll(".bar").forEach(function (current) {
@@ -635,7 +645,6 @@ $(document).ready(function () {
   });
 
   function handleAudio(curBtn, curId, endPresent, dotClicked) {
-    console.log(curBtn, curId);
     if (dotClicked) {
       audio1.pause();
       audio3.pause();
@@ -669,19 +678,4 @@ $(document).ready(function () {
       }
     }
   }
-  // function sendEmail() {
-  //   Email.send({
-  //     Host: "smtp.yourisp.com",
-  //     Username: "username",
-  //     Password: "password",
-  //     To: 'ynajjarine@gmail.com',
-  //     From: "an@najjarinestructures.com",
-  //     Subject: "Test Email",
-  //     Body: "This is a test email sent using SMTP.js"
-  //   })
-  //     .then(function (message) {
-  //       alert("Mail sent successfully") // Alert message on successful email delivery
-  //     });
-  // }
-  // sendEmail();
 });
